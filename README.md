@@ -1,6 +1,16 @@
 # 🤖 AI Web Assistant - Chrome Extension
 
+[![Stars](https://img.shields.io/github/stars/ama8ine1712/passion-extension?style=flat&color=70a5fd)](https://github.com/ama8ine1712/passion-extension/stargazers)
+[![Issues](https://img.shields.io/github/issues/ama8ine1712/passion-extension?style=flat&color=ff7b72)](https://github.com/ama8ine1712/passion-extension/issues)
+![Theme](https://img.shields.io/badge/theme-tokyonight-1a1b27?style=flat)
+
 An intelligent browser extension that reads webpage content and provides AI-powered assistance to help users understand and interact with web pages more effectively.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Chrome%20Extension-JavaScript-1a1b27?logo=googlechrome&logoColor=white" alt="Chrome Extension" />
+  <img src="https://img.shields.io/badge/Content%20Scripts-Enabled-1a1b27" alt="Content Scripts" />
+  <img src="https://img.shields.io/badge/Popup-UI-1a1b27" alt="Popup UI" />
+</p>
 
 ## ✨ Features
 
