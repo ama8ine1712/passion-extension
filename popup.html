@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Web Assistant</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Web Assistant</h1>
+            <p class="subtitle">Your intelligent browsing companion</p>
+        </header>
+
+        <div class="status-section">
+            <div id="page-info">
+                <h3>Current Page</h3>
+                <p id="page-title">Loading...</p>
+                <p id="page-url" class="url-text">Loading...</p>
+            </div>
+        </div>
+
+        <div class="ai-section">
+            <div class="input-group">
+                <textarea 
+                    id="user-question" 
+                    placeholder="Ask me anything about this page..."
+                    rows="3"
+                ></textarea>
+                <button id="ask-btn" class="ask-button">
+                    <span class="btn-text">Ask AI</span>
+                    <span class="loading-spinner" style="display: none;">⏳</span>
+                </button>
+            </div>
+
+            <div id="response-container" class="response-container" style="display: none;">
+                <h4>AI Response:</h4>
+                <div id="ai-response" class="ai-response"></div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <h4>Quick Actions</h4>
+            <div class="action-buttons">
+                <button id="summarize-btn" class="action-btn">📝 Summarize</button>
+                <button id="explain-btn" class="action-btn">💡 Explain</button>
+                <button id="questions-btn" class="action-btn">❓ Generate Questions</button>
+            </div>
+        </div>
+
+        <div class="settings">
+            <button id="settings-btn" class="settings-btn">⚙️ Settings</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AI Web Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .welcome-container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .welcome-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .welcome-header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .welcome-header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .welcome-content {
+            padding: 40px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .feature-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .feature-text h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .feature-text p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .welcome-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #495057;
+            border: 1px solid #dee2e6;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .demo-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .demo-section h3 {
+            margin-bottom: 15px;
+            color: #495057;
+        }
+
+        .demo-steps {
+            list-style: none;
+        }
+
+        .demo-steps li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .step-number {
+            width: 24px;
+            height: 24px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-header">
+            <h1>🤖 Welcome to AI Web Assistant!</h1>
+            <p>Your intelligent browsing companion is ready to help</p>
+        </div>
+
+        <div class="welcome-content">
+            <h2>What can AI Web Assistant do for you?</h2>
+            
+            <ul class="feature-list">
+                <li>
+                    <div class="feature-icon">📖</div>
+                    <div class="feature-text">
+                        <h3>Smart Content Analysis</h3>
+                        <p>Automatically reads and analyzes webpage content to understand what you're viewing</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-icon">💬</div>
+                    <div class="feature-text">
+                        <h3>Ask Questions</h3>
+                        <p>Ask any question about the webpage content and get intelligent, contextual answers</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-icon">📝</div>
+                    <div class="feature-text">
+                        <h3>Quick Summaries</h3>
+                        <p>Get instant summaries of long articles and complex content</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-icon">💡</div>
+                    <div class="feature-text">
+                        <h3>Smart Explanations</h3>
+                        <p>Break down complex topics into simple, easy-to-understand explanations</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-icon">❓</div>
+                    <div class="feature-text">
+                        <h3>Generate Questions</h3>
+                        <p>Get thought-provoking questions to deepen your understanding of the content</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="demo-section">
+                <h3>🚀 Quick Start Guide</h3>
+                <ol class="demo-steps">
+                    <li>
+                        <div class="step-number">1</div>
+                        <span>Navigate to any webpage you want to analyze</span>
+                    </li>
+                    <li>
+                        <div class="step-number">2</div>
+                        <span>Click the AI Web Assistant icon in your browser toolbar</span>
+                    </li>
+                    <li>
+                        <div class="step-number">3</div>
+                        <span>Ask questions or use the quick action buttons</span>
+                    </li>
+                    <li>
+                        <div class="step-number">4</div>
+                        <span>Or use the floating AI button on any webpage for quick access</span>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="welcome-actions">
+                <button class="btn btn-primary" onclick="startUsing()">Start Using Now</button>
+                <button class="btn btn-secondary" onclick="openSettings()">Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startUsing() {
+            // Close the welcome page and open a new tab
+            chrome.tabs.create({ url: 'https://www.google.com' });
+            window.close();
+        }
+
+        function openSettings() {
+            // Open extension settings
+            chrome.runtime.openOptionsPage();
+        }
+    </script>
+</body>
+</html> 
